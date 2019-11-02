@@ -53,6 +53,7 @@ int main() {
          MSG_CONFIRM, (const struct sockaddr *) &servaddr,  
          sizeof(servaddr)); 
    
+  clear_list(&num_lst);
           
   n = recvfrom(sockfd, &sum, sizeof(int),  
                MSG_WAITALL, (struct sockaddr *) &servaddr, 

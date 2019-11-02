@@ -58,6 +58,10 @@ int main() {
   printf("printing deserialized object on receiving machine:\n");
   print_list_t(lst);
   sum = sum_list(lst);
+
+  clear_list(lst);
+  free(lst);
+  lst = NULL;
   
   sendto(sockfd, &sum, sizeof(int), MSG_CONFIRM, 
          (const struct sockaddr *) &cliaddr, len); 

@@ -21,8 +21,7 @@ int main() {
   int sockfd; 
   char buffer[MAXLINE];
   int n, len, sum;  
-  char *hello = "Hello from client"; 
-  struct sockaddr_in     servaddr; 
+  struct sockaddr_in servaddr; 
 
   init_list(&num_lst);
   add_list_node(&num_lst, 11);

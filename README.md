@@ -11,4 +11,4 @@ used for serialize and deserialize a simple list with
 integer numbers. There is client and a server process,
 the first one performs the list serialization and the
 second one performs the deserialization and returns
-back the sum of integers. 
+back the sum of integers.
